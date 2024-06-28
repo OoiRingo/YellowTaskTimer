@@ -1,6 +1,10 @@
 # YellowTaskTimer
 A simple 20-minute time for those struggling to complete Yellow Quadrant Tasks. IYKYK
-Slightly modified version of Geoff Graham's timer.
+Slightly modified version of Geoff Graham's timer from
+
+A Pen created on CodePen.io. Original URL: [https://codepen.io/geoffgraham/pen/yLywVbW](https://codepen.io/geoffgraham/pen/yLywVbW).
+
+
 
 Copyright (c) 2024 Geoff Graham (https://codepen.io/geoffgraham/pen/yLywVbW)
 
