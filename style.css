@@ -5,56 +5,30 @@ body {
   place-items: center;
 }
 
-.base-timer {
+.pie {
+  width: 70px;
+  height: 70px;
+  border: 2px solid DeepPink;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, Aquamarine 50%, DeepPink 50%);
   position: relative;
-  width: 200px;
-  height: 200px;
+  overflow: hidden;
 }
 
-.base-timer__svg {
-  transform: scaleX(-1);
-}
-
-.base-timer__circle {
-  fill: none;
-  stroke: none;
-}
-
-.base-timer__path-elapsed {
-  stroke-width: 7px;
-  stroke: grey;
-}
-
-.base-timer__path-remaining {
-  stroke-width: 7px;
-  stroke-linecap: round;
-  transform: rotate(90deg);
-  transform-origin: center;
-  transition: 1s linear all;
-  fill-rule: nonzero;
-  stroke: currentColor;
-}
-
-.base-timer__path-remaining.green {
-  color: rgb(65, 184, 131);
-}
-
-.base-timer__path-remaining.orange {
-  color: orange;
-}
-
-.base-timer__path-remaining.red {
-  color: red;
-}
-
-.base-timer__label {
+.pie:after {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  font-family: sans-serif;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  content: "";
+  background: Aquamarine;
+  transform-origin: 0 50%;
+  animation: pieAniAfter 5s linear infinite;
 }
+
+@keyframes pieAniAfter {
+  0%     { transform: rotate(0deg);   background: Aquamarine; }
+  49.99% { transform: rotate(180deg); background: Aquamarine; }
+  50%    { transform: rotate(0deg);   background: DeepPink; }
+  99.99% { transform: rotate(180deg); background: DeepPink; }
+  100%   { transform: rotate(0deg);   background: Aquamarine; }
