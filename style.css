@@ -27,11 +27,11 @@ body {
 }
 
 @keyframes pieAniAfter {
-  0%     { transform: rotate(0deg);   background: blue; }
-  49.99% { transform: rotate(180deg); background: blue; }
-  50%    { transform: rotate(0deg);   background: white; }
-  99.99% { transform: rotate(180deg); background: white; }
-  100%   { transform: rotate(0deg);   background: blue; }
+  0%     { transform: rotate(0deg);   background: #6b9fff; }
+  49.99% { transform: rotate(180deg); background: #6b9fff; }
+  50%    { transform: rotate(0deg);   background: #123456; }
+  99.99% { transform: rotate(180deg); background: #123456; }
+  100%   { transform: rotate(0deg);   background: #6b9fff; }
 
 
 
