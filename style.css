@@ -8,9 +8,9 @@ body {
 .pie {
   width: 70px;
   height: 70px;
-  border: 2px solid DeepPink;
+  border: 3px solid #123456;
   border-radius: 50%;
-  background-image: linear-gradient(90deg, blue 50%, DeepPink 50%);
+  background-image: linear-gradient(90deg, blue 50%, white 50%);
   position: relative;
   overflow: hidden;
 }
@@ -29,8 +29,8 @@ body {
 @keyframes pieAniAfter {
   0%     { transform: rotate(0deg);   background: #6b9fff; }
   49.99% { transform: rotate(180deg); background: #6b9fff; }
-  50%    { transform: rotate(0deg);   background: #123456; }
-  99.99% { transform: rotate(180deg); background: #123456; }
+  50%    { transform: rotate(0deg);   background: white; }
+  99.99% { transform: rotate(180deg); background: white; }
   100%   { transform: rotate(0deg);   background: #6b9fff; }
 
 
