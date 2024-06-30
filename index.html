@@ -5,22 +5,45 @@
   <title>Yellow Quadrant Task Timer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
-
 </head>
 <body>
 
 <table>
 <tr>
-<td valign="middle">
-<div class="pie"></div>
+<td align="center" valign="middle">
+<!-- partial:index.partial.html -->
+<div id="app"></div>
+<!-- partial -->
+  <script  src="./script.js"></script>
 </td>
+</tr>
+<tr align="center">
 <td valign="top">
+<br>
+  <p style="font-size: 40px; "> 
+  I know this is hard, but you just gotta start. <br>
+  <br><br>
+  What is the task?<br>
+  <textarea name="task" rows="1" cols="40">
+  </textarea><br><br>
+  What are the steps?<br>
+  <textarea name="steps" rows="12" cols="40">
+ 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 
-<p>
-  <button onClick="window.location.reload();" style="font-size : 13px; width: 90px; height: 25px;">Reset Timer</button>
+  </textarea>
 </p>
+  <button onClick="window.location.reload();" style="font-size: 36px; width: 275px; height: 60px;">Execute!</button>
+
 </td>
 </tr>
 </table>
+  
 </body>
 </html>
