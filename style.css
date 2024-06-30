@@ -23,7 +23,7 @@ body {
   content: "";
   background: Aquamarine;
   transform-origin: 0 50%;
-  animation: pieAniAfter 5s linear infinite;
+  animation: pieAniAfter 10s linear;
 }
 
 @keyframes pieAniAfter {
